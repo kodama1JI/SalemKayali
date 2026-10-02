@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salem Kayali — Food Technology Engineer</title>
+  <meta name="description" content="Salem Kayali, Food Technology Engineer. QA at Rama Pharma Pharmaceutical Industries.">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add("js");
+      var theme = "light";
+      var lang = "en";
+      try {
+        var storedTheme = localStorage.getItem("sk-theme");
+        var storedLang = localStorage.getItem("sk-lang");
+        if (storedTheme === "dark" || storedTheme === "light") theme = storedTheme;
+        if (storedLang === "ar" || storedLang === "en") lang = storedLang;
+      } catch (e) {}
+      root.setAttribute("data-theme", theme);
+      root.lang = lang;
+      root.dir = lang === "ar" ? "rtl" : "ltr";
+      document.title = lang === "ar"
+        ? "سالم كيالي — مهندس تكنولوجيا أغذية"
+        : "Salem Kayali — Food Technology Engineer";
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+Arabic:wght@400;500;600&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">
+    <span lang="en">Skip to content</span>
+    <span lang="ar">تخطي إلى المحتوى</span>
+  </a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#hero">
+        <span lang="en">Salem Kayali</span>
+        <span lang="ar">سالم كيالي</span>
+      </a>
+
+      <nav id="site-nav" class="nav" aria-label="Primary">
+        <a href="#about"><span lang="en">About</span><span lang="ar">نبذة</span></a>
+        <a href="#experience"><span lang="en">Experience</span><span lang="ar">الخبرة</span></a>
+        <a href="#quality"><span lang="en">Quality</span><span lang="ar">الجودة</span></a>
+        <a href="#skills"><span lang="en">Skills</span><span lang="ar">المهارات</span></a>
+        <a href="#contact"><span lang="en">Contact</span><span lang="ar">تواصل</span></a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-set-lang="ar" aria-pressed="false">عربي</button>
+        </div>
+        <button type="button" class="tool-btn" id="theme-toggle">
+          <span class="when-light" lang="en">Dark</span>
+          <span class="when-dark" lang="en">Light</span>
+          <span class="when-light" lang="ar">داكن</span>
+          <span class="when-dark" lang="ar">فاتح</span>
+        </button>
+        <button type="button" class="tool-btn menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-open-label">
+            <span lang="en">Menu</span>
+            <span lang="ar">القائمة</span>
+          </span>
+          <span class="menu-close-label" hidden>
+            <span lang="en">Close</span>
+            <span lang="ar">إغلاق</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="hero-wash" aria-hidden="true"></div>
+      <div class="droplets" aria-hidden="true">
+        <span class="droplet"></span>
+        <span class="droplet"></span>
+        <span class="droplet"></span>
+        <span class="droplet"></span>
+        <span class="droplet"></span>
+      </div>
+      <div class="wrap">
+        <div class="hero-copy">
+        <p class="eyebrow">
+          <span lang="en">Food Technology Engineer</span>
+          <span lang="ar">مهندس تكنولوجيا أغذية</span>
+        </p>
+        <h1>
+          <span lang="en">Salem Kayali</span>
+          <span lang="ar">سالم كيالي</span>
+        </h1>
+        <p class="hero-role">
+          <span lang="en">Quality Assurance</span>
+          <span lang="ar">ضمان الجودة</span>
+        </p>
+        <p class="lead">
+          <span lang="en">QA at Rama Pharma Pharmaceutical Industries: daily rounds to apply GMP, monitoring of manufacturing processes, production quality control, and quality assurance of the finished product.</span>
+          <span lang="ar">ضمان الجودة في شركة راما فارما للصناعات الدوائية: جولات يومية لتطبيق نظام <span dir="ltr">GMP</span>، ومراقبة العمليات التصنيعية، وضبط جودة الإنتاج، وضمان جودة المنتج النهائي.</span>
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">
+            <span lang="en">Contact</span>
+            <span lang="ar">تواصل</span>
+          </a>
+          <a class="btn btn-line" href="#quality">
+            <span lang="en">Quality work</span>
+            <span lang="ar">عمل الجودة</span>
+          </a>
+          <a class="btn btn-line" href="Salem_Kayali_CV_V2.pdf" download="Salem_Kayali_CV_V2.pdf">
+            <span lang="en">Download CV</span>
+            <span lang="ar">تحميل السيرة</span>
+          </a>
+          <a class="btn btn-amber" href="tel:0935664135">0935664135</a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="about">
+      <div class="wrap">
+        <h2>
+          <span lang="en">From food science to a controlled production line</span>
+          <span lang="ar">من علوم الأغذية إلى خط إنتاج مضبوط</span>
+        </h2>
+        <div class="about-panel">
+          <p>
+            <span lang="en">Salem Kayali is a Food Technology Engineer working in quality assurance at Rama Pharma Pharmaceutical Industries.</span>
+            <span lang="ar">سالم كيالي مهندس تكنولوجيا أغذية، ويعمل في ضمان الجودة في شركة راما فارما للصناعات الدوائية.</span>
+          </p>
+          <p>
+            <span lang="en">The work is a daily round to apply the GMP system, monitoring of manufacturing processes, production quality control, and quality assurance of the finished product.</span>
+            <span lang="ar">يشمل العمل جولات يومية لتطبيق نظام <span dir="ltr">GMP</span>، ومراقبة العمليات التصنيعية، وضبط جودة الإنتاج، وضمان جودة المنتج النهائي.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band reveal" id="experience">
+      <div class="wrap">
+        <h2>
+          <span lang="en">Experience</span>
+          <span lang="ar">الخبرة</span>
+        </h2>
+        <article class="card job lift">
+          <p class="role">
+            <span lang="en">QA</span>
+            <span lang="ar">ضمان الجودة</span>
+          </p>
+          <h3 class="grow-line">
+            <span lang="en">Rama Pharma Pharmaceutical Industries</span>
+            <span lang="ar">شركة راما فارما للصناعات الدوائية</span>
+          </h3>
+          <ul class="duties">
+            <li>
+              <span lang="en">Daily rounds to apply the GMP system (Good Manufacturing Practice).</span>
+              <span lang="ar">جولات يومية لتطبيق نظام <span dir="ltr">GMP</span> (ممارسات التصنيع الجيد).</span>
+            </li>
+            <li>
+              <span lang="en">Monitoring manufacturing processes.</span>
+              <span lang="ar">مراقبة العمليات التصنيعية.</span>
+            </li>
+            <li>
+              <span lang="en">Production quality control.</span>
+              <span lang="ar">ضبط جودة الإنتاج.</span>
+            </li>
+            <li>
+              <span lang="en">Quality assurance of the finished product.</span>
+              <span lang="ar">ضمان جودة المنتج النهائي.</span>
+            </li>
+          </ul>
+        </article>
+        <article class="card job lift">
+          <p class="role">
+            <span lang="en">Quality Controller</span>
+            <span lang="ar">مراقب جودة</span>
+          </p>
+          <p class="term">
+            <span lang="en">Six months</span>
+            <span lang="ar">ستة أشهر</span>
+          </p>
+          <h3 class="grow-line">
+            <span lang="en">Müller Ice Cream Manufacturing</span>
+            <span lang="ar">شركة مولر لصناعة الآيس كريم</span>
+          </h3>
+          <ul class="duties">
+            <li>
+              <span lang="en">Quality control of ice cream manufacturing.</span>
+              <span lang="ar">مراقبة جودة صناعة الآيس كريم.</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="quality">
+      <div class="wrap">
+        <h2 id="quality-title">
+          <span lang="en">How a batch stays in control</span>
+          <span lang="ar">كيف تبقى الدفعة تحت السيطرة</span>
+        </h2>
+        <ol class="process" aria-labelledby="quality-title">
+          <li class="step">
+            <span class="seal" aria-hidden="true">
+              <svg viewBox="0 0 36 36">
+                <circle class="seal-track" cx="18" cy="18" r="15" pathLength="100"></circle>
+                <circle class="seal-ring" cx="18" cy="18" r="15" pathLength="100"></circle>
+              </svg>
+              <span class="seal-dot"></span>
+            </span>
+            <div class="step-body">
+              <span class="step-index"><span lang="en">01</span><span lang="ar">٠١</span></span>
+              <h3 class="grow-line">
+                <span lang="en">Daily GMP round</span>
+                <span lang="ar">الجولة اليومية لنظام <span dir="ltr">GMP</span></span>
+              </h3>
+              <p>
+                <span lang="en">A daily round applies the GMP system, Good Manufacturing Practice.</span>
+                <span lang="ar">جولة يومية لتطبيق نظام <span dir="ltr">GMP</span>، ممارسات التصنيع الجيد.</span>
+              </p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="seal" aria-hidden="true">
+              <svg viewBox="0 0 36 36">
+                <circle class="seal-track" cx="18" cy="18" r="15" pathLength="100"></circle>
+                <circle class="seal-ring" cx="18" cy="18" r="15" pathLength="100"></circle>
+              </svg>
+              <span class="seal-dot"></span>
+            </span>
+            <div class="step-body">
+              <span class="step-index"><span lang="en">02</span><span lang="ar">٠٢</span></span>
+              <h3 class="grow-line">
+                <span lang="en">Process monitoring</span>
+                <span lang="ar">مراقبة العمليات</span>
+              </h3>
+              <p>
+                <span lang="en">Manufacturing processes are monitored while production is running.</span>
+                <span lang="ar">مراقبة العمليات التصنيعية أثناء التشغيل.</span>
+              </p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="seal" aria-hidden="true">
+              <svg viewBox="0 0 36 36">
+                <circle class="seal-track" cx="18" cy="18" r="15" pathLength="100"></circle>
+                <circle class="seal-ring" cx="18" cy="18" r="15" pathLength="100"></circle>
+              </svg>
+              <span class="seal-dot"></span>
+            </span>
+            <div class="step-body">
+              <span class="step-index"><span lang="en">03</span><span lang="ar">٠٣</span></span>
+              <h3 class="grow-line">
+                <span lang="en">Production QC</span>
+                <span lang="ar">ضبط جودة الإنتاج</span>
+              </h3>
+              <p>
+                <span lang="en">Production quality is controlled on the line.</span>
+                <span lang="ar">ضبط جودة الإنتاج على خط التصنيع.</span>
+              </p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="seal" aria-hidden="true">
+              <svg viewBox="0 0 36 36">
+                <circle class="seal-track" cx="18" cy="18" r="15" pathLength="100"></circle>
+                <circle class="seal-ring" cx="18" cy="18" r="15" pathLength="100"></circle>
+              </svg>
+              <span class="seal-dot"></span>
+            </span>
+            <div class="step-body">
+              <span class="step-index"><span lang="en">04</span><span lang="ar">٠٤</span></span>
+              <h3 class="grow-line">
+                <span lang="en">Finished-product release</span>
+                <span lang="ar">إطلاق المنتج النهائي</span>
+              </h3>
+              <p>
+                <span lang="en">The finished product is assured before it is released.</span>
+                <span lang="ar">ضمان جودة المنتج النهائي قبل إطلاقه.</span>
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section band reveal" id="skills">
+      <div class="wrap">
+        <h2>
+          <span lang="en">Skills</span>
+          <span lang="ar">المهارات</span>
+        </h2>
+        <ul class="skill-list">
+          <li class="card skill lift">
+            <h3 class="grow-line">
+              <span lang="en">Food Technology</span>
+              <span lang="ar">تكنولوجيا الأغذية</span>
+            </h3>
+          </li>
+          <li class="card skill lift">
+            <h3 class="grow-line"><span dir="ltr">QA/QC</span></h3>
+          </li>
+          <li class="card skill lift">
+            <h3 class="grow-line">
+              <span lang="en">GMP</span>
+              <span lang="ar">ممارسات التصنيع الجيد</span>
+            </h3>
+          </li>
+          <li class="card skill lift">
+            <h3 class="grow-line">
+              <span lang="en">HACCP</span>
+              <span lang="ar">نظام الهاسب</span>
+            </h3>
+          </li>
+          <li class="card skill lift">
+            <h3 class="grow-line"><span dir="ltr">ISO 22000</span></h3>
+          </li>
+          <li class="card skill lift">
+            <h3 class="grow-line"><span dir="ltr">ISO 9001</span></h3>
+          </li>
+          <li class="card skill lift">
+            <h3 class="grow-line"><span dir="ltr">ICDL</span></h3>
+          </li>
+          <li class="card skill lift">
+            <h3 class="grow-line"><span dir="ltr">AutoCAD</span></h3>
+          </li>
+        </ul>
+        <div class="skill-groups">
+          <article class="card skill-group lift">
+            <h3 class="grow-line">
+              <span lang="en">Analyses and laboratories</span>
+              <span lang="ar">التحاليل والمختبرات</span>
+            </h3>
+            <ul>
+              <li>
+                <span lang="en">Chemical and microbiological testing of foods (cheese, cake, chocolate, and ice cream).</span>
+                <span lang="ar">الفحوصات الكيميائية والجرثومية للأغذية (الأجبان، الكيك، الشوكولا، البوظة).</span>
+              </li>
+              <li>
+                <span lang="en">Treatment and analysis of industrial water and drinking water.</span>
+                <span lang="ar">معالجة وتحليل المياه (الصناعية ومياه الشرب).</span>
+              </li>
+              <li>
+                <span lang="en">Tracking critical control points.</span>
+                <span lang="ar">تتبع نقاط الرقابة الحرجة.</span>
+              </li>
+            </ul>
+          </article>
+          <article class="card skill-group lift">
+            <h3 class="grow-line">
+              <span lang="en">Engineering and software</span>
+              <span lang="ar">الهندسة والبرامج</span>
+            </h3>
+            <ul>
+              <li>
+                <span lang="en">Two-dimensional engineering design (AutoCAD).</span>
+                <span lang="ar">التصميم الهندسي ثنائي الأبعاد (<span dir="ltr">AutoCAD</span>).</span>
+              </li>
+              <li>
+                <span lang="en">Thermal calculations and pasteurization engineering.</span>
+                <span lang="ar">الحسابات الحرارية وهندسة البسترة.</span>
+              </li>
+              <li>
+                <span lang="en">Mechanical and technical maintenance.</span>
+                <span lang="ar">الصيانة الميكانيكية والفنية.</span>
+              </li>
+              <li>
+                <span lang="en">Legal accounting and cost accounting.</span>
+                <span lang="ar">المحاسبة القانونية وحساب التكاليف.</span>
+              </li>
+            </ul>
+          </article>
+          <article class="card skill-group lift">
+            <h3 class="grow-line">
+              <span lang="en">Management and compliance</span>
+              <span lang="ar">الإدارة والامتثال</span>
+            </h3>
+            <ul>
+              <li>
+                <span lang="en">Industrial and operational process management.</span>
+                <span lang="ar">إدارة العمليات الصناعية والتشغيلية.</span>
+              </li>
+              <li>
+                <span lang="en">Leading work teams.</span>
+                <span lang="ar">قيادة فرق العمل.</span>
+              </li>
+              <li>
+                <span lang="en">Directing shared departments.</span>
+                <span lang="ar">توجيه الأقسام المشتركة.</span>
+              </li>
+              <li>
+                <span lang="en">Applying occupational safety and health standards, and production quality assurance.</span>
+                <span lang="ar">تطبيق معايير السلامة والصحة المهنية وضمان جودة الإنتاج.</span>
+              </li>
+            </ul>
+          </article>
+          <article class="card skill-group lift">
+            <h3 class="grow-line">
+              <span lang="en">Languages</span>
+              <span lang="ar">اللغات المتقنة</span>
+            </h3>
+            <ul>
+              <li>
+                <span lang="en">Arabic: native language, fluent (100%).</span>
+                <span lang="ar">اللغة العربية: اللغة الأم (100% — طليق).</span>
+              </li>
+              <li>
+                <span lang="en">English: intermediate professional level (50%).</span>
+                <span lang="ar">اللغة الإنجليزية: مستوى مهني متوسط (50%).</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <div class="wrap">
+        <h2>
+          <span lang="en">Available for quality and food-technology work</span>
+          <span lang="ar">متاح لعمل الجودة وتكنولوجيا الأغذية</span>
+        </h2>
+        <ul class="contact-list">
+          <li class="card contact-card lift">
+            <span class="label">
+              <span lang="en">Phone</span>
+              <span lang="ar">الهاتف</span>
+            </span>
+            <a href="tel:0935664135">0935664135</a>
+          </li>
+          <li class="card contact-card lift">
+            <span class="label">
+              <span lang="en">Email</span>
+              <span lang="ar">البريد الإلكتروني</span>
+            </span>
+            <a class="grow-line" href="mailto:salemkayale49@gmail.com">salemkayale49@gmail.com</a>
+          </li>
+          <li class="card contact-card lift">
+            <span class="label">
+              <span lang="en">Location</span>
+              <span lang="ar">الموقع</span>
+            </span>
+            <p class="contact-value">
+              <span lang="en">Aleppo, Syria</span>
+              <span lang="ar">حلب، سوريا</span>
+            </p>
+          </li>
+          <li class="card contact-card lift">
+            <span class="label">
+              <span lang="en">CV</span>
+              <span lang="ar">السيرة الذاتية</span>
+            </span>
+            <a class="grow-line" href="Salem_Kayali_CV_V2.pdf" download="Salem_Kayali_CV_V2.pdf">
+              <span lang="en">Download CV</span>
+              <span lang="ar">تحميل السيرة</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        <span lang="en">Salem Kayali</span>
+        <span lang="ar">سالم كيالي</span>
+        <span aria-hidden="true"> · </span>
+        <span lang="en">Food Technology Engineer</span>
+        <span lang="ar">مهندس تكنولوجيا أغذية</span>
+        <span aria-hidden="true"> · </span>
+        <span id="year">2026</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
